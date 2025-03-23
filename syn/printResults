@@ -1,0 +1,4 @@
+report_timing >> ./report_timing_CLK.txt
+report_area >> ./report_area_CLK.txt
+ungroup -all -flatten
+

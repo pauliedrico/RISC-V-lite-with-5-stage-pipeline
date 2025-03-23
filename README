@@ -1,0 +1,12 @@
+In sim folder:
+	run make for VHDL simulation
+    run make_sin for synopsis netlist simulation
+
+In syn folder:
+    run in order:
+       source start_syn
+       source clockC
+       compile
+       source printResults
+       source exportD
+       

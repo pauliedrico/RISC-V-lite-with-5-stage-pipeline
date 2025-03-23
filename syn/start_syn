@@ -1,0 +1,11 @@
+define_design_lib WORK -path ./work
+set search_path [list . /eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn /eda/dk/nangate45/synopsys ../sram_32_1024_freepdk45 ]
+set link_library [list "*" "NangateOpenCellLibrary_typical_ecsm.db" "dw_foundation.sldb" "sram_32_1024_freepdk45_TT_1p0V_25C.db" ]
+set target_library [list "NangateOpenCellLibrary_typical_ecsm.db" "sram_32_1024_freepdk45_TT_1p0V_25C.db" ]
+set synthetic_library [list "dw_foundation.sldb" ]
+analyze -library WORK -format vhdl {../src/generic_mux2to1.vhd ../src/ALU_Control.vhd ../src/n_bit_unsigned_adder.vhd ../src/alu_riscv_lite.vhd ../src/register_file.vhd ../src/imm_gen.vhd ../src/instruction_fetch.vhd ../src/instruction_decode.vhd ../src/execute.vhd ../src/write_back.vhd ../src/fetcher.vhd ../src/Load_Store_Unit.vhd ../src/forwarding_unit.vhd ../src/branch_prediction_table.vhd ../src/Branch_Prediction_Unit.vhd ../src/hazard_detection_unit.vhd ../src/DP_RISCV_lite.vhd ../src/CU_RISCV_lite.vhd ../src/RISCVlite.vhd ../src/mem_test.vhd ../src/RISCV_SSRAM.vhd }
+set power_preserve_rtl_hier_names true
+elaborate RISCV_SSRAM -arch behavioral -lib WORK
+uniquify
+link
+

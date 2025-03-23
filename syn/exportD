@@ -1,0 +1,3 @@
+change_names -hierarchy -rules verilog
+write -f verilog -hierarchy -output ../netlist/RISCVSSRAM.v
+

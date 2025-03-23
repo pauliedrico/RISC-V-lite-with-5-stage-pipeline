@@ -1,0 +1,33 @@
+vlib work
+vcom -work work ../tb/ALU_Control.vhd
+vcom -work work ../tb/alu_riscv_lite.vhd
+vcom -work work ../tb/CU_RISCV_lite.vhd
+vcom -work work ../tb/DP_RISCV_lite.vhd
+vcom -work work ../tb/execute.vhd
+vcom -work work ../tb/fetcher.vhd
+vcom -work work ../tb/flip_flop.vhd
+vcom -work work ../tb/generic_memory.vhd
+vcom -work work ../tb/generic_mux2to1.vhd
+vcom -work work ../tb/imm_gen.vhd
+vcom -work work ../tb/instruction_decode.vhd
+vcom -work work ../tb/instruction_fetch.vhd
+vcom -work work ../tb/write_back.vhd
+vcom -work work ../tb/Load_Store_Unit.vhd
+vcom -work work ../tb/forwarding_unit.vhd
+vcom -work work ../tb/memory.vhd
+vcom -work work ../tb/n_bit_reg.vhd
+vcom -work work ../tb/n_bit_unsigned_adder.vhd
+vcom -work work ../tb/register_file.vhd
+vcom -work work ../tb/branch_prediction_table.vhd
+vcom -work work ../tb/Branch_Prediction_Unit.vhd
+vcom -work work ../tb/hazard_detection_unit.vhd
+vcom -work work ../tb/RISCVlite.vhd
+vcom -work work ../tb/RISCV_SSRAM.vhd
+
+vlog -93 -work ./work ../sram_32_1024_freepdk45/sram_32_1024_freepdk45.v
+vcom -work work ../tb/clk_gen.vhd
+vcom -93 -work work ../tb/mem_test.vhd
+vcom -work work ../tb/data_dumper.vhd
+vcom -work work ../tb/tb_RISCV_lite.vhd
+
+vsim work.tb_RISCV_lite

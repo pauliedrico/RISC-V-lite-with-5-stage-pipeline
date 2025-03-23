@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : RISCV_SSRAM
+Version: S-2021.06-SP4
+Date   : Wed Feb 21 18:17:48 2024
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db)
+    sram_32_1024_freepdk45_TT_1p0V_25C_lib (File: /home/isa18_2023_2024/Desktop/LAB3/material/RISCV_lite_stages_version9_SSRAM/sram_32_1024_freepdk45/sram_32_1024_freepdk45_TT_1p0V_25C.db)
+
+Number of ports:                         4604
+Number of nets:                         25156
+Number of cells:                        18717
+Number of combinational cells:          12144
+Number of sequential cells:              6469
+Number of macros/black boxes:               2
+Number of buf/inv:                       4139
+Number of references:                      10
+
+Combinational area:              13599.516213
+Buf/Inv area:                     2924.669948
+Noncombinational area:           22633.142693
+Macro/Black Box area:            99941.812500
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                136174.471406
+Total area:                 undefined
+1
